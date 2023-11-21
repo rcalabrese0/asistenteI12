@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto12</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div>
+        <center><img src="static/img/logo.jpg"></center><br><br>  
+        </div>
+        <div id="sup_barra" class="sup_barra"></div>
+        <div id="barra" class="barra"> <center><span class="asistente-text">Asistente virtual i12</span></center> </div>
+    <h2>
+        Bienvenido al asistente virtual de:
+        Instituto superior de formación técnica N°12
+    </h2>
+    <h3>
+        El Instituto Superior de Formación Técnica Nº 12 es un Establecimiento Educativo
+        de nivel superior no universitario dependiente de la Dirección de Educación Superior
+        de la Dirección General de Cultura y Educación de la Provincia de Buenos Aires.
+    </h3>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Ingrese una opción válida..." autocomplete="off">
+        <button id="send-button">Enviar</button>
+    </div>
+    <div class="animacion_personaje" id="animacion_personaje">
+        <img id="personaje" src="static/img/logo.png" alt="Mi_logo_i12" width="100" height="150">
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

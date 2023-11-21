@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+}
+
+.barra{
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    background:black;
+    color: aliceblue;
+    
+}
+
+.sup_barra{
+    padding: 0px;
+    width: 100%;
+    height: 3px;
+    background: red;
+}
+
+.asistente-text {
+    font-size: 35px;
+    /* Otros estilos CSS que desees aplicar */
+}
+
+#chat-container {
+    max-width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#chat-box {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.user-message {
+    text-align: right;
+    margin-bottom: 5px;
+    background-color:lightgrey;
+}
+
+.chatbot-message {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#personaje {
+    width: 100px;
+    height: 150px;
+    position: fixed;
+    animation: rebotaDerecha 8s linear infinite;
+}
+
+@keyframes rebotaDerecha {
+    0% {
+        bottom: 12%;
+        left: 0;
+    }
+    20% {
+        bottom: 0;
+        left: 20%;
+    }
+    40% {
+        bottom: 12%;
+        left: 40%;
+    }
+    60% {
+        bottom: 0;
+        left: 60%;
+    }
+    80% {
+        bottom: 12%;
+        left: 80%;
+    }
+    100% {
+        bottom: 0;
+        left: 100%;
+    }
+}
